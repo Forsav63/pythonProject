@@ -35,14 +35,14 @@ while True:
     try:
         element = int(input("Введите положительное целое число из полученного списка: "))
         if element < min(array) or element > max(array):
-            print("Число не входит в диапазон списка!")
+            print("Число не входит в диапазон списка")
         if element <= 0:
             raise Exception
         break
     except ValueError:
-        print("Введите целое число!")
+        print("Введите целое число")
     except Exception:
-        print("Введите положительное число!")
+        print("Введите положительное число")
 
 def binary_search(array, element, left, right):
     if left > right:
